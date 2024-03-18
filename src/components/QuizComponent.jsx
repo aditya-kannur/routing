@@ -65,13 +65,14 @@ export default class QuizComponent extends Component{
 
   render(){
     const {currentQuestion} = this.state;
+    const currentQuestionIndex = this.state.currentQuestionIndex
 
     return(
       <div className="question">
         <h2>Question</h2>
 
         <div>
-          <span>1 of 15</span>
+          <p> {currentQuestionIndex + 1} of 15</p>
           <h5>{currentQuestion.question}</h5>
         </div>
 
